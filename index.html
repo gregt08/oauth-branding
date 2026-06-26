@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hermes Agent — OAuth Branding</title>
+    <title>Hermes Agent</title>
     <meta name="google-site-verification" content="geUGTwKYdgQg62WqHWVXWcnPPKxsILQlLzf2zK0SMQg" />
     <style>
         body {
@@ -15,9 +15,12 @@
             color: #1a1a2e;
             background: #f8f9fa;
         }
-        h1 { font-size: 1.8rem; margin-bottom: 0.3em; }
-        h2 { font-size: 1.2rem; margin-top: 2em; color: #555; }
+        h1 { font-size: 2rem; margin-bottom: 0.2em; color: #111; }
+        .subtitle { font-size: 1rem; color: #555; margin-top: 0; }
+        h2 { font-size: 1.2rem; margin-top: 2em; color: #333; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; }
         p { margin: 0.8em 0; }
+        ul { padding-left: 1.5em; }
+        li { margin: 0.4em 0; }
         .tag {
             display: inline-block;
             background: #e2e8f0;
@@ -28,12 +31,27 @@
             margin: 8px 4px 0 0;
         }
         a { color: #2563eb; }
+        .privacy-notice {
+            background: #eef2ff;
+            border: 1px solid #c7d2fe;
+            border-radius: 8px;
+            padding: 12px 18px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+        .privacy-notice a { font-weight: 600; }
         footer { margin-top: 3em; font-size: 0.85rem; color: #888; border-top: 1px solid #ddd; padding-top: 1.5em; }
+        .app-name { font-weight: 700; }
     </style>
 </head>
 <body>
     <h1>Hermes Agent</h1>
-    <p>Personal AI agent — executive function scaffold and automation platform.</p>
+    <p class="subtitle">Personal AI agent that integrates with Google Workspace — reading <strong>Google Calendar</strong> events for daily briefings, triaging <strong>Gmail</strong> messages, and accessing <strong>Google Drive</strong> documents — to help the account owner manage their daily workflow. All data is processed on the owner's private infrastructure.</p>
+
+    <div class="privacy-notice">
+        📄 <a href="https://oauth.taylordit.com/privacy.html">Privacy Policy</a>
+    </div>
 
     <div>
         <span class="tag">Google Calendar</span>
@@ -42,15 +60,23 @@
         <span class="tag">OAuth 2.0</span>
     </div>
 
-    <h2>About</h2>
-    <p>Hermes Agent is a personal automation platform that integrates with Google Workspace APIs for calendar management, email processing, and document access — all under the sole control of the account owner.</p>
-    <p>This application is used exclusively by its owner for personal task automation. No third-party access, no commercial use.</p>
+    <h2>Application Purpose</h2>
+    <p><span class="app-name">Hermes Agent</span> is a personal AI agent and automation platform that integrates with Google Workspace to help the account owner manage their daily workflow. The application performs the following functions:</p>
+    <ul>
+        <li><strong>Daily Briefing:</strong> Reads Google Calendar events to generate a consolidated daily schedule, including personal, family, and task-based events.</li>
+        <li><strong>Email Management:</strong> Reads Gmail to triage incoming messages and identify key items requiring attention. Sends email only when explicitly directed by the user.</li>
+        <li><strong>Document Access:</strong> Reads Google Drive documents and spreadsheets for data processing, analysis, and reporting tasks.</li>
+    </ul>
+    <p>This application is used exclusively by the account owner for personal task automation. It does not provide services to third parties, nor does it access data on behalf of any organization.</p>
+
+    <h2>Data Handling</h2>
+    <p>All data accessed via Google APIs is processed in memory and stored only on the owner's private infrastructure. No data is shared with third parties, used for training, or sold. OAuth tokens are stored securely and access is limited to the minimum scopes required.</p>
 
     <h2>Contact</h2>
     <p>For questions about this application or its data practices, contact the app owner via GitHub at <a href="https://github.com/gregt08">github.com/gregt08</a>.</p>
 
     <footer>
-        <p><a href="privacy.html">Privacy Policy</a></p>
+        <p><a href="https://oauth.taylordit.com/privacy.html">Privacy Policy</a> | <a href="https://oauth.taylordit.com/">Home</a></p>
     </footer>
 </body>
 </html>
