@@ -2,29 +2,39 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hermes Agent</title>
 <meta name="google-site-verification" content="geUGTwKYdgQg62WqHWVXWcnPPKxsILQlLzf2zK0SMQg" />
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 700px; margin: 50px auto; padding: 0 20px; line-height: 1.7; color: #1a1a2e; background: #fff; }
+h1 { font-size: 2rem; margin-bottom: 0; color: #000; }
+h2 { font-size: 1.2rem; margin-top: 2em; color: #333; }
+p { margin: 0.8em 0; }
+a { color: #1a73e8; }
+footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ddd; font-size: 0.85rem; }
+</style>
 </head>
 <body>
 
 <h1>Hermes Agent</h1>
 
-<p><strong>Hermes Agent</strong> is a personal AI automation platform used exclusively by its owner. It integrates with Google Workspace to help manage daily workflow.</p>
+<p><strong>Hermes Agent</strong> helps you manage your daily schedule and email by reading your Google Calendar events to produce a daily briefing, scanning Gmail to highlight important messages, and accessing Google Drive documents you specifically request. All processing happens on your private infrastructure.</p>
 
-<h2>Use of Google User Data</h2>
+<h2>How This App Uses Google User Data</h2>
 
-<p><strong>Google Calendar</strong> — Events are read once daily to generate text-only schedule summaries. No calendar data is stored permanently.</p>
+<p><strong>Google Sign-In &amp; OAuth 2.0</strong> — You sign in with your Google Account. The app requests only the minimum scopes needed to provide its features.</p>
 
-<p><strong>Gmail</strong> — Incoming messages are scanned on request to identify important items. Email is sent only when explicitly directed by the user.</p>
+<p><strong>Google Calendar</strong> — Events are read once per day to generate a text-only schedule summary. Calendar data is processed in memory and not permanently stored. Used only for the daily briefing feature.</p>
 
-<p><strong>Google Drive</strong> — Documents and spreadsheets are accessed only when the user requests a specific task. Data is processed in memory and not retained.</p>
+<p><strong>Gmail</strong> — Message metadata and content are scanned when you request an inbox review, to identify important items needing attention. The app sends email only when you explicitly confirm. No email content is permanently retained.</p>
 
-<p>All data is processed in memory on the owner's private infrastructure. No data is shared with third parties, used for training, or sold.</p>
+<p><strong>Google Drive</strong> — Documents and spreadsheets are accessed only when you request a specific analysis or task. Data is processed in memory and results are returned to you. Raw document content is not stored.</p>
 
+<p>No Google user data is shared with third parties, sold, or used for training. All data processing occurs on the owner's private home lab infrastructure. You can revoke access at any time via your <a href="https://myaccount.google.com/permissions">Google Account permissions page</a>.</p>
+
+<footer>
 <p><a href="https://oauth.taylordit.com/privacy.html">Privacy Policy</a></p>
-
-<h2>Contact</h2>
-<p><a href="https://github.com/gregt08">github.com/gregt08</a></p>
+</footer>
 
 </body>
 </html>
