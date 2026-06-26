@@ -1,124 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hermes Agent</title>
-    <meta name="google-site-verification" content="geUGTwKYdgQg62WqHWVXWcnPPKxsILQlLzf2zK0SMQg" />
-
-    <!-- Open Graph / Social -->
-    <meta property="og:title" content="Hermes Agent" />
-    <meta property="og:description" content="Hermes Agent is a personal AI automation platform that integrates with Google Workspace — reading Google Calendar events for daily briefings, triaging Gmail messages, and accessing Google Drive documents — to help the account owner manage their daily workflow." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://oauth.taylordit.com" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Hermes Agent" />
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Hermes Agent",
-      "applicationCategory": "Personal Automation",
-      "operatingSystem": "Linux",
-      "description": "Personal AI agent that integrates with Google Workspace for daily briefing generation, email management, and document access on private infrastructure."
-    }
-    </script>
-
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 720px;
-            margin: 60px auto;
-            padding: 0 24px;
-            line-height: 1.6;
-            color: #1a1a2e;
-            background: #f8f9fa;
-        }
-        h1 { font-size: 2rem; margin-bottom: 0.2em; color: #111; }
-        .app-subtitle { font-size: 1rem; color: #555; margin-top: 0; }
-        h2 { font-size: 1.2rem; margin-top: 2em; color: #333; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; }
-        p { margin: 0.8em 0; }
-        ul { padding-left: 1.5em; }
-        li { margin: 0.4em 0; }
-        .tag {
-            display: inline-block;
-            background: #e2e8f0;
-            color: #475569;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin: 8px 4px 0 0;
-        }
-        a { color: #2563eb; }
-        .privacy-notice {
-            background: #eef2ff;
-            border: 1px solid #c7d2fe;
-            border-radius: 8px;
-            padding: 12px 18px;
-            margin: 20px 0;
-            text-align: center;
-            font-size: 0.95rem;
-        }
-        .privacy-notice a { font-weight: 600; }
-        footer { margin-top: 3em; font-size: 0.85rem; color: #888; border-top: 1px solid #ddd; padding-top: 1.5em; }
-        .app-name { font-weight: 700; }
-        .scope-box {
-            background: #fff;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 12px 18px;
-            margin: 12px 0;
-        }
-        .scope-box strong { color: #1e293b; }
-        .scope-box .purpose { color: #475569; display: block; margin-top: 4px; }
-    </style>
+<meta charset="UTF-8">
+<title>Hermes Agent</title>
+<meta name="google-site-verification" content="geUGTwKYdgQg62WqHWVXWcnPPKxsILQlLzf2zK0SMQg" />
 </head>
 <body>
-    <h1>Hermes Agent</h1>
-    <p class="app-subtitle"><strong>Hermes Agent</strong> is a personal AI automation platform that integrates with Google Workspace to help the account owner manage their daily workflow. It reads <strong>Google Calendar</strong> events to produce daily schedule summaries, triages incoming <strong>Gmail</strong> messages, and accesses <strong>Google Drive</strong> documents for data processing — all on the owner's private infrastructure.</p>
 
-    <div class="privacy-notice">
-        📄 <a href="https://oauth.taylordit.com/privacy.html">Privacy Policy</a>
-    </div>
+<h1>Hermes Agent</h1>
 
-    <div>
-        <span class="tag">Google Calendar</span>
-        <span class="tag">Gmail</span>
-        <span class="tag">Google Drive</span>
-        <span class="tag">OAuth 2.0</span>
-    </div>
+<p><strong>Hermes Agent</strong> is a personal AI automation platform used exclusively by its owner. It integrates with Google Workspace to help manage daily workflow.</p>
 
-    <h2>How This App Uses Your Google Data</h2>
+<h2>Use of Google User Data</h2>
 
-    <div class="scope-box">
-        <strong>Google Calendar</strong>
-        <span class="purpose"><strong>Purpose:</strong> Reads Calendar events once daily to generate a consolidated text-only schedule. <strong>Data handled:</strong> Event titles, times, and descriptions. Events are processed in memory and not stored long-term. Calendar data is never shared with third parties.</span>
-    </div>
+<p><strong>Google Calendar</strong> — Events are read once daily to generate text-only schedule summaries. No calendar data is stored permanently.</p>
 
-    <div class="scope-box">
-        <strong>Gmail</strong>
-        <span class="purpose"><strong>Purpose:</strong> Scans incoming mail metadata and content on request to identify important items requiring attention. Can send email only when explicitly directed by the user. <strong>Data handled:</strong> Message subject lines, sender, and body content. Email content is not permanently stored. Email is never sent without user confirmation.</span>
-    </div>
+<p><strong>Gmail</strong> — Incoming messages are scanned on request to identify important items. Email is sent only when explicitly directed by the user.</p>
 
-    <div class="scope-box">
-        <strong>Google Drive</strong>
-        <span class="purpose"><strong>Purpose:</strong> Reads documents and spreadsheets when the user requests a specific task (data analysis, report generation). <strong>Data handled:</strong> Document text content and spreadsheet cell values. Data is processed in memory and results are provided to the user; raw document data is not retained.</span>
-    </div>
+<p><strong>Google Drive</strong> — Documents and spreadsheets are accessed only when the user requests a specific task. Data is processed in memory and not retained.</p>
 
-    <p>This application is used exclusively by the account owner for personal task automation. It does not provide services to third parties, nor does it access data on behalf of any organization.</p>
+<p>All data is processed in memory on the owner's private infrastructure. No data is shared with third parties, used for training, or sold.</p>
 
-    <h2>Data Handling</h2>
-    <p>All data accessed via Google APIs is processed in memory and stored only on the owner's private infrastructure. No data is shared with third parties, used for training, or sold. OAuth tokens are stored securely and access is limited to the minimum scopes required.</p>
+<p><a href="https://oauth.taylordit.com/privacy.html">Privacy Policy</a></p>
 
-    <h2>Contact</h2>
-    <p>For questions about this application or its data practices, contact the app owner via GitHub at <a href="https://github.com/gregt08">github.com/gregt08</a>.</p>
+<h2>Contact</h2>
+<p><a href="https://github.com/gregt08">github.com/gregt08</a></p>
 
-    <footer>
-        <p><a href="https://oauth.taylordit.com/privacy.html">Privacy Policy</a> | <a href="https://oauth.taylordit.com/">Home</a></p>
-    </footer>
-    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a11c02fb78d6c688',t:'MTc4MjQ3NDgwNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
